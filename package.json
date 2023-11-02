@@ -6,6 +6,7 @@
     "start": "node ./bin/www"
   },
   "dependencies": {
+    "@cyclic.sh/dynamodb": "^0.0.35",
     "aws-sdk": "^2.1487.0",
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
