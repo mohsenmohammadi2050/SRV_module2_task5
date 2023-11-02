@@ -8,7 +8,7 @@ router.post("/", async function(req, res){
     const { text } = req.body;
     await s3.putObject({
         Body: JSON.stringify({text:text}, null, 2),
-        Bucket: "cyclic-frightened-sarong-crab-eu-west-1",
+        Bucket: "cyclic-jealous-sweater-toad-eu-north-1",
         Key: "text.json",
     }).promise()
     res.end()
@@ -18,7 +18,7 @@ router.post("/", async function(req, res){
 
 router.get("/", async function(req, res){
     let my_file = await s3.getObject({
-        Bucket: "cyclic-frightened-sarong-crab-eu-west-1",
+        Bucket: "cyclic-jealous-sweater-toad-eu-north-1",
         Key: "text.json",
     }).promise()
 
